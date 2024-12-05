@@ -21,7 +21,7 @@
     "react-dom": "^18.3.1",
     "react-scripts": "^5.0.1"
   },
-  "proxy": "eth-wallet-tracker.vercel.app",
+  "proxy": "http://localhost:5000",
   "browserslist": {
     "production": [
       ">0.2%",
