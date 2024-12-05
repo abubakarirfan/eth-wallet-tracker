@@ -5,7 +5,7 @@ import dotenv from "dotenv";
 dotenv.config();
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 5000;
 
 // Ethereum Provider (using public blockchain API or Infura/Alchemy)
 const provider = new ethers.JsonRpcProvider(process.env.ETH_RPC_URL);
