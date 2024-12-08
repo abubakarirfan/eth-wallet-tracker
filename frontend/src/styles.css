@@ -35,3 +35,115 @@ button:hover {
 .success {
     color: green;
 }
+
+/* Centering the table container */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Responsive table styling */
+table {
+    width: 90%;
+    /* Adjust table width to fit the screen */
+    max-width: 1200px;
+    /* Limit the max width */
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: left;
+    background-color: #fff;
+    /* Ensure white background for better readability */
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+/* Table headers */
+th {
+    background-color: #f4f4f4;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+/* Table cells */
+td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    /* Center text in cells */
+    word-break: break-word;
+    /* Ensure long text wraps properly */
+}
+
+/* Alternate row colors for better visibility */
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    table {
+        font-size: 14px;
+        /* Reduce font size for smaller screens */
+    }
+
+    th,
+    td {
+        padding: 8px;
+    }
+}
+
+/* Aligning pagination controls */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.pagination button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.pagination button:hover {
+    background-color: #0056b3;
+}
+
+.pagination button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+.pagination span {
+    margin: 0 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.chart-container {
+    width: 90%;
+    /* Adjust width for responsiveness */
+    max-width: 1000px;
+    /* Set a maximum width */
+    height: 400px;
+    /* Ensure the chart has sufficient height */
+    margin: 0 auto;
+    /* Center the chart */
+}
